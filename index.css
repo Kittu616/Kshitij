@@ -118,6 +118,7 @@ body {
 }
 .back {
     background-image: url(come.jpeg);
+    border-radius:25px;
     transform: rotateY(180deg);
     width: 400px;
     height: 400px;
