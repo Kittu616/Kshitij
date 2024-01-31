@@ -84,6 +84,53 @@ body {
     left: 10rem;
 }
 
+.flip-container {
+    perspective: 1000px;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    
+    padding: 0%;
+    flex: 1 2 100px;
+}
+
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform-origin: center;
+}
+
+.front,
+.back {
+    top: 24vh;
+    left: 10vw;
+    position: absolute;
+    backface-visibility: hidden;   
+}
+
+.front img{
+    border-radius: 25px;
+}
+.back {
+    background-image: url(come.jpeg);
+    transform: rotateY(180deg);
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    left: 5vw;
+}
+
+.back p{
+    color: black;
+    font-size:200%;
+}
+
 #cd {
     flex: 1 2 200px;
     color: #ffffff;
@@ -97,14 +144,15 @@ body {
     padding-top: 15vh;
 }
 
+
 .card-text {
-    opacity: 0;
-    transform: translateY(-10vh);
+    opacity: 1;
+    transform: translateY(-20vh);
     transition: all 3s ease-out;
     transition-delay: 0s;
     transform-box: content-box;
     position: relative;
-    font-size: 220%;
+    font: 250% bolder;
     padding: 0%;
     margin: 0%;
     margin-bottom: 6vh;
@@ -116,7 +164,7 @@ body {
     padding-bottom: 0vh;
 }
 #bq-footer {
-
+    font-size: larger;
     text-align: right;
     padding-right: 5vw;
 }
