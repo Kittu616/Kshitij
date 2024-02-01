@@ -131,7 +131,7 @@ body {
     padding-top: 2vh;
     padding-left: 5vw;
     padding-right: 5vw;
-    padding-bottom:5vh;
+    padding-bottom: 5vh;
 }
 
 .project p {
@@ -194,6 +194,7 @@ body {
 .back2 {
     top: -5vh;
     left: 0vw;
+    
     position: absolute;
     backface-visibility: hidden;   
 }
@@ -220,7 +221,6 @@ body {
 }
 
 .back2 p{
-    background-image: url(come.jpeg); /* remove this */
     font-size:150%;
 }
 
