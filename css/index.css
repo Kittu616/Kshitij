@@ -28,11 +28,12 @@ header {
     font-size: xx-large;
     position: fixed;
     padding: 0.5vw 5%;
+    padding-top: 2vh;
     top: 0%;
 }
 
 .bar-img {
-    width: 8%;
+    width: 12%;
     height: auto;
     cursor: pointer;
     margin-right: auto;
