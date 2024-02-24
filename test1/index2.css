@@ -1,0 +1,114 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+
+.container {
+  height: 100%;
+}
+.gallery {
+  list-style-type: none;
+  height: 100%;
+  overflow: hidden;
+}
+.gallery li {
+  float: left;
+  height: 100%;
+  width: 400px;
+  background: #2E4053;
+}
+.gallery .flip {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px;
+  perspective: 2000px;
+}
+.gallery li:hover .front-side {
+  opacity: 0;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.gallery li:hover .back-side {
+  background: #000;
+  opacity: 1;
+}
+.gallery .front-side,
+.gallery .back-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+}
+.gallery .front-side {
+  background-size: cover;
+  background-position: 50% 50%;
+
+}
+
+.gallery li:nth-child(1) .front-side {
+  background-image:url('http://pre12.deviantart.net/f04f/th/pre/i/2015/281/c/e/virtus_pro_tribute_by_haryarti-d9cdvwy.jpg');
+}
+
+.gallery li:nth-child(2) .front-side {
+  background-image: url('http://pre06.deviantart.net/f121/th/pre/i/2014/280/7/a/crystal_maiden_by_haryarti-d81xgfl.jpg');
+}
+
+.gallery li:nth-child(3) .front-side {
+  background-image: url('http://pre10.deviantart.net/3566/th/pre/i/2014/289/5/a/drow_ranger_by_haryarti-d83292f.jpg');
+}
+
+.gallery li:nth-child(4) .front-side {
+  background-image: url('http://pre01.deviantart.net/c319/th/pre/i/2014/322/e/a/windrunner_by_haryarti-d86ubud.jpg');
+}
+
+.gallery li:nth-child(5) .front-side {
+  background-image: url('http://pre04.deviantart.net/5815/th/pre/f/2014/149/7/7/death_prophet_from_dota_2_by_o_l_i_v_i-d7k2ekl.jpg');
+}
+
+.gallery li:nth-child(6) .front-side {
+  background-image: url('http://pre02.deviantart.net/ce96/th/pre/i/2015/177/7/7/katarina_by_haryarti-d8ytd5o.jpg');
+}
+.gallery li:nth-child(7) .front-side {
+  background-image: url('http://pre10.deviantart.net/cbaf/th/pre/i/2015/047/0/2/vengeful_spirit_by_haryarti-d8iau4i.png');
+}
+.gallery li:nth-child(8) .front-side {
+  background-image: url('http://pre06.deviantart.net/73a2/th/pre/i/2014/080/5/7/lina_by_haryarti-d7b48eu.jpg');
+}
+.gallery .content {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 25px 20px;
+}
+
+.gallery li:hover .text {
+  opacity: 1;
+  visibility: visible;
+  max-height: 2000px;
+  transition: opacity .1s ease-in 1s, max-height .1s ease 1s;
+}
+.gallery .text {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+}
+.gallery .content h3 {
+  position: relative;
+  color: #3498DB;
+  font: normal 30px/1.25 'Open Sans';
+  margin-bottom: 25px;
+}
+.gallery .content p {
+  margin: 10px 0;
+  color: #D6DBDF;
+  font: normal 16px/1.25 'Open Sans';
+}
