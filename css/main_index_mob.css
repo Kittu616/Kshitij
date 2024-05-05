@@ -1,0 +1,31 @@
+@media screen and (max-width:780px) {
+
+    .head {
+        position: fixed;
+        z-index: 5;
+        text-align: left;
+        font-size: 150%;
+        background-color: black;
+        background-size: 110% 50%;
+        margin-top: -12rem;
+        margin-left: -0.5rem;
+        margin-right: -1rem;
+        padding-right: 4vw;
+        width: 100.6%;
+        display: flex;
+        direction: ltr;
+    }
+
+    .bar-sym {
+        flex: 0 2 10vw;
+        box-sizing: content-box;
+        margin-left: -32vw;
+        margin-bottom: 2vh;
+        margin-top: 6vh;
+    }
+
+    .m_btn {
+        display: contents;
+
+    }
+}

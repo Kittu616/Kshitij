@@ -1,0 +1,146 @@
+
+#projects {
+    margin: 5vh 5vw 0vh 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-text{
+    color: #000;
+    height: 3rem;
+    font-weight: bolder;
+    font-size: 450%;
+    text-align: center;
+    transition: 0.5s ease-out;
+}
+
+
+.pro-text:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    font: bold;
+    text-shadow: 0px 2px 13px #00FFFF;
+}
+
+.pros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20vh;
+    margin-top: 25vh;
+    padding: 0% 10vw 5vh 0vw;
+    gap: 3vh;
+}
+
+
+.flipper2 p {
+    font-size: 150%;
+    padding: 0vh 0vw 0vh 0vw;
+    margin: 0vh 0vw 0vh 0vw;
+}
+
+
+.flip-container2:hover .flipper2 {
+    transform: rotateY(180deg);
+}
+
+.flipper2 {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform-origin: center;
+    width: 200px;
+    height: 200px;
+    padding: 0vh;
+    flex: 1 3 150vw;
+    text-align: center;
+}
+
+.front2,
+.back2 {
+    top: -5vh;
+    left: 0vw;
+    object-position: center center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front2 span{
+    background-image: url('come.webp');
+}
+
+.front2 #why{
+    margin-top: -14em;
+    margin-bottom: -4em;
+    animation: tragfarlaw 2s infinite cubic-bezier(0,0,0,0);
+
+}
+
+@keyframes tragfarlaw {
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    0%{
+        transform: rotate(0deg);
+    }    
+}
+
+.front2 span p{
+    font-size: 100%;
+    margin-top: -1.5em;
+}
+
+
+.front2 span {
+    color: black;
+    font-size: 150% ;
+    font-weight:bolder;
+    font-family: "Kode Mono", sans-serif ;
+
+
+}
+
+.back2 {
+    border-radius: 25px;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    background-color: white;
+    transition-duration: 5s;
+    width: auto;
+}
+
+.back2 p {
+    padding: 30px;
+    font-size: 100%;
+    height: inherit;
+}
+
+
+
+
+
+
+.cont {
+    font-size: 180%;
+    margin: 0vh 30vw 0vh 32vw;
+    padding: 0%;
+}
+
+
+#btn-1 {
+    text-align: left;
+    background-color: white;
+    border-radius: 18px;
+    padding-left: 2vw;
+    width: 25vw;
+    z-index: 4;
+}
+
+.star {
+    text-align: center;
+    padding-right: 2.5vw;
+}
