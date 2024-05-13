@@ -43,6 +43,7 @@
 
 .flip-container2:hover .flipper2 {
     transform: rotateY(180deg);
+    scale: 1.1;
 }
 
 .flipper2 {
