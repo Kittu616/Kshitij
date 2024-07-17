@@ -1,0 +1,40 @@
+body{
+  background-color: black;
+  padding: 10vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  break-inside: avoid;
+  border: 10px solid white;
+}
+
+figure  img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+figure a {
+  color: black;
+  text-decoration: none;
+}
+
+figcaption {
+  grid-row: 3;
+  grid-column: 1;
+  background-color: rgba(255,255,255,.5);
+  padding: .2em .5em;
+  justify-self: start;
+}
+
+.container-figure {
+  column-count: 3;
+  column-gap: 10px;
+}

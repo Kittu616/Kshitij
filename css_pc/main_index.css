@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+
+body {
+    font-family: "Kode Mono", sans-serif;
+    background: linear-gradient( black 35%,#540165 100%);
+    background-color: white !important;
+
+}
+
+::-webkit-scrollbar {
+    width: 0vw;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*nav bar*/
+header {
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    position: fixed;
+    padding: 0.5vw 5%;
+    top: 0%;
+    box-shadow:0px 3px 8px rgba(0, 0, 0, 0.5);
+    color: lavenderblush;
+    backdrop-filter: blur(20px);
+}
+
+
+.bar-img {
+    width: 12%;
+    height: auto;
+    cursor: pointer;
+    margin-right: auto;
+    z-index: 4;
+}
+
+.bar-div {
+    list-style: none;
+    margin: 1vh 0vh -1vh 0vh;
+    z-index: 4;
+}
+
+.bar-div li {
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    display: inline;
+    padding: 0.5vw;
+    margin: 0vh 0vh 0vw 2vh;
+    cursor: grabbing;
+    transition: all 0.3s ease-in 0s;
+}
+
+.bar-div li:hover {
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+}
+
+.bar-div li a {
+    cursor: grabbing;
+    transition: all 0.3s ease-in 0s;
+}
+
+.bar-div li a:hover {
+    color: #000;
+}
+
+.drop_box{
+    display: none;
+}
+
+/*nav bar ended*/
+
+
+.joke {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1vh;
+    padding-top: 8vh;
+}
+
+.joke img {
+    border-radius: 10px;
+}
+
+.joke p {
+    padding: 0px 20vw 0px 20vw;
+    font-size: 150%;
+}
+
+.joke footer {
+    font-size: 120%;
+}
+
+.contact-info {
+    text-align: center;
+    background-color: #8bce33;
+    color: WHITE;
+    padding-top: 6vh;
+    padding-bottom: 1vh;
+    box-shadow: 0px -2px 8px rgba(139, 206, 33,0.5),
+    0px -1px 8px rgba(139, 206, 33,1),
+    0px -2px 8px rgba(139, 206, 33,1);
+}
+
+.contact-info h2 {
+    margin-bottom: 5vh;
+}
+
+.contact-info p {
+    margin-top: 3vh;
+}
+
+.contact-info a {
+    padding-right: 2vh;
+}

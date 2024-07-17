@@ -1,0 +1,103 @@
+@media screen and (max-width:780px) {
+    #projects{
+        margin-bottom: 25vh;
+    }
+    .pro-text {
+        font-size: 350%;
+        width: 180%;
+        margin-left: 20%;
+    }
+
+
+    .pro-text:hover {
+        transform: scale(1.2);
+    }
+
+    .pros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+        margin-left: 90vw;
+
+    }
+
+
+    .flipper2 p {
+        font-size: 150%;
+        padding: 0vh 0vw 0vh 0vw;
+        margin: 0vh 0vw 0vh 0vw;
+    }
+
+
+    .flipper2 {
+        width: 200px;
+        height: 200px;
+        padding: 0vh;
+        flex: 1 3 150vw;
+    }
+
+    .front2,
+    .back2 {
+        top: -5vh;
+        left: 0vw;
+        object-position: center center;
+        position: absolute;
+        backface-visibility: hidden;
+    }
+
+
+    .front2 #why {
+        margin-top: -12.5em;
+
+    }
+    .front2 span {
+        font-size: 250% ;
+        color: floralwhite;
+    
+    
+    }
+
+    .front2 span p {
+        font-size: 90%;
+        margin-top: -1rem;
+    }
+
+    .back2{
+        width: 125%;
+        margin-left: -25%;
+    }
+
+    .back2 p {
+        padding: 30px;
+        font-size: 150%;
+    }
+
+    .front2 img, span img{
+        width: 270px;
+        height: 270px;
+    }
+
+
+
+
+    .cont {
+        font-size: 180%;
+        margin: 0vh 30vw 0vh 32vw;
+        padding: 0%;
+    }
+
+
+    #btn-1 {
+        text-align: left;
+        background-color: white;
+        border-radius: 18px;
+        padding-left: 2vw;
+        width: 25vw;
+        z-index: 4;
+    }
+
+    .star {
+        text-align: center;
+        padding-right: 2.5vw;
+    }
+}

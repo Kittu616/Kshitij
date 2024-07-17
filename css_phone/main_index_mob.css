@@ -1,0 +1,107 @@
+@media screen and (max-width:426px) {
+    body {
+        background: linear-gradient( black 25%,#540165 100%);
+    
+    }
+    /*nav bar*/
+    header {
+        display: flex;
+        align-items: end;
+        font-size: 3rem;
+        position: fixed;
+        padding: 2vw 5%;
+
+    }
+
+    .line_bar {
+        display: none;
+    }
+
+    .drop_list {
+        display: none;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+        color: lavenderblush;
+        backdrop-filter: blur(20px);
+    }
+
+    .drop_box {
+        display: grid;
+    }
+
+    .show2 {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 16vh;
+        padding: 0% 13% 0% 67%;
+        z-index: 4;
+        font-size: 42px;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .show2 a {
+        color: white !important;
+    }
+
+    .bar-img {
+        width: 17%;
+        margin-top: 3vh;
+    }
+
+    .bar-img img {
+        width: 160px;
+    }
+
+    .bar-div {
+        list-style: none;
+        margin: 1vh 0vh -1vh 0vh;
+        z-index: 4;
+    }
+
+    .bar-div li {
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        display: inline;
+        padding: 0.5vw;
+        margin: 0vh 0vh 0vw 2vh;
+        cursor: grabbing;
+        transition: all 0.3s ease-in 0s;
+    }
+
+    .bar-div li:hover {
+        color: rgb(255, 0, 0);
+        background-color: aliceblue;
+    }
+
+    .bar-div li a {
+        cursor: grabbing;
+        transition: all 0.3s ease-in 0s;
+    }
+
+    .bar-div li a:hover {
+        color: #000;
+    }
+
+    /*nav bar ended*/
+
+
+    .contact-info {
+        width: 210%;
+        padding-bottom: 15%;
+    }
+    .contact-info h2 {
+        font-size: 40px;
+    }
+
+    .contact-info p {
+        margin-top: 3vh;
+        font-size: 30px;
+    }
+
+    .contact-info a {
+        padding-right: 5vh;
+    }
+    .fa-2xl{
+        font-size: 3.5rem;
+    }
+}

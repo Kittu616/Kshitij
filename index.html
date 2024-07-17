@@ -5,20 +5,22 @@
 <head>
     <title>Kshitij</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/fe6f63c52c.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/fe6f63c52c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <link rel="icon" type="image/x-icon" href="photo\f4.webp">
-    <script src="main_script.js" defer></script>
-    <link rel="stylesheet" href="css\main_index.css">
-    <link rel="stylesheet" href="css\main_title.css">
-    <link rel="stylesheet" href="css\main_project.css">
-    <link rel="stylesheet" href="css\main_index_mob.css">
+    <link rel="stylesheet" href="css_pc\main_index.css">
+    <link rel="stylesheet" href="css_pc\main_title.css">
+    <link rel="stylesheet" href="css_pc\main_project.css">
+    <link rel="stylesheet" href="css_phone\main_index_mob.css">
+    <link rel="stylesheet" href="css_phone\main_title_mob.css">
+    <link rel="stylesheet" href="css_phone\main_project_mob.css">
     <link rel="stylesheet" href="main_to_test.css">
+
 </head>
 
 <body>
@@ -27,60 +29,30 @@
 
 
 
-    <header>
-        <a class="bar-img" href="https://www.linkedin.com/in/kshitij-r-phutane-6690a525a/" target="_blank"><img src="photo/f.webp" draggable="false"
-                alt="" width="120px" height="auto"></a>
+    <header class="headers">
+        <a class="bar-img" href="https://www.linkedin.com/in/kshitij-r-phutane-6690a525a/" target="_blank"><img
+                src="photo/f.webp" draggable="false" alt="" width="120px" height="auto"></a>
         <nav class="bar-div">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
+
+            <!--for pc -->
+            <ul class="line_bar">
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" >About</a></li>
             </ul>
+
+            <!--for phone -->
+            <div class="drop_box">
+                <div class="drop_btn" id="drop_btn"><i class="fa-solid fa-bars" id="menu"></i></div>
+            </div>
+
 
 
         </nav>
     </header>
 
-
-
-
-
-
-
-
-
-    <div class="content">
-        <div class="content__container ">
-            <ul class="content__container__list ">
-                <li>
-                    <center><b>Whispers</b></center>
-                </li>
-                <li>
-                    <center><b>Clocks</b></center>
-                </li>
-                <li>
-                    <center><b>Stars</b></center>
-                </li>
-                <li>
-                    <center><b>Raindrops</b></center>
-                </li>
-            </ul>
-            <ul class="content__container__list2">
-                <li>
-                    <center><b>welcomes</b></center>
-                </li>
-                <li>
-                    <center><b>ushers</b></center>
-                </li>
-                <li>
-                    <center><b>greets</b></center>
-                </li>
-                <li>
-                    <center><b>embraces</b></center>
-                </li>
-            </ul>
-        </div>
-
+    <div class="drop_list" id="drop_list">
+        <a href="#projects">Projects</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a>
     </div>
 
 
@@ -88,145 +60,191 @@
 
 
 
+    <div>
 
+        <div class="content">
+            <div class="content__container ">
+                <ul class="content__container__list " id="content_list_1">
+                    <li>
+                        <center><b>Whispers</b></center>
+                    </li>
+                    <li>
+                        <center><b>Clocks</b></center>
+                    </li>
+                    <li>
+                        <center><b>Stars</b></center>
+                    </li>
+                    <li>
+                        <center><b>Raindrops</b></center>
+                    </li>
+                </ul>
+                <ul class="content__container__list" id="content_list_2">
+                    <li>
+                        <center><b>welcomes</b></center>
+                    </li>
+                    <li>
+                        <center><b>ushers</b></center>
+                    </li>
+                    <li>
+                        <center><b>greets</b></center>
+                    </li>
+                    <li>
+                        <center><b>embraces</b></center>
+                    </li>
+                </ul>
+            </div>
 
-
-    <div class="show">
-        <blockquote class="blockquote mb-0" id="blq">
-            <p class="card-text" style="color: white;">
-                <span class="title-word title-word-4">A Corner of the internet where I share some fun, interesting
-                    projects I have
-                    made over year</span>
-            </p>
-            <footer class="blockquote-footer" id="bq-footer"><cite>Kshitij <br> Tech Geek and Hobbiest
-                </cite>
-            </footer>
-        </blockquote>
-
-        <div class="show-img" id="showing"><img style="border-radius: 25px;" src="photo\pfp.webp" alt="Fucker" draggable="false">
         </div>
-    </div>
 
 
 
 
 
 
-    <!-- Program completed till here -->
 
 
 
+        <div class="show">
+            <blockquote class="blockquote mb-0" id="blq">
+                <p class="card-text" style="color: white;">
+                    <span class="title-word title-word-4">A Corner of the internet where I share some fun, interesting
+                        projects I have
+                        made over year</span>
+                </p>
+                <footer class="blockquote-footer" id="bq-footer"><cite>Kshitij <br> Tech Geek and Hobbiest
+                    </cite>
+                </footer>
+            </blockquote>
 
-
-
-    <div class="project" id="projects">
-        <div class="pro-text">
-            <i>
-                <p>Geeky Projects Over the Years</p>
-            </i>
+            <div class="show-img"><img style="border-radius: 25px;" src="photo\pfp.webp" alt="Fucker" draggable="false">
+            </div>
+            <div class="show-img2"><img style="border-radius: 25px;" src="photo\pfp.webp" alt="Fucker"
+                    draggable="false">
+            </div>
         </div>
-        <div class="pros">
 
-            <!--project preview 1-->
 
-            <div class="pro" id="pr2">
-                <div class="flip-container2">
-                    <div class="flipper2">
-                        <div class="front2">
-                            <span><img src="photo\icon2.webp" alt="" width="200" height="200" draggable="false"
+
+
+
+
+        <!-- Program completed till here -->
+
+
+
+
+
+
+        <div class="project" id="projects">
+            <div class="pro-text">
+                <i>
+                    <p>Geeky Projects Over the Years</p>
+                </i>
+            </div>
+            <div class="pros">
+
+                <!--project preview 1-->
+
+                <div class="pro" id="pr2">
+                    <div class="flip-container2">
+                        <div class="flipper2">
+                            <div class="front2">
+                                <span><img src="photo\icon2.webp" alt=""  draggable="false"
+                                        style="border-radius: 25px;">
+                                </span>
+                                <span>WebDev </span>
+                            </div>
+                            <div class="back2" id="b-text">
+                                <p>Website you are looking. <br>
+                                    Will update few designs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--project preview 2-->
+
+
+                <div class="pro" id="pr2">
+                    <div class="flip-container2">
+                        <div class="flipper2">
+                            <div class="front2">
+                                <span>
+                                    <img src="photo\0186.png" alt=""  draggable="false"
+                                        style="border-radius: 25px;">
+                                </span>
+                                <span>Blender </span>
+                            </div>
+                            <div class="back2" id="b-text">
+                                <p> 3D modeling and animation project of one of my favorite shows <a
+                                        href="https://youtu.be/ltRqzZAfVVQ?feature=shared" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square fa-xg"
+                                            style="color: black;"></i>
+                                    </a></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!--project preview 3-->
+
+
+                <div class="pro" id="pr2">
+                    <div class="flip-container2">
+                        <div class="flipper2">
+                            <div class="front2">
+                                <img src="photo\come.webp" alt="" draggable="false"
                                     style="border-radius: 25px;">
-                            </span>
-                            <span>WebDev </span>
-                        </div>
-                        <div class="back2" id="b-text">
-                            <p>Website you are looking. <br>
-                                Will update few designs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!--project preview 2-->
-
-
-            <div class="pro" id="pr2">
-                <div class="flip-container2">
-                    <div class="flipper2">
-                        <div class="front2">
-                            <span>
-                                <img src="photo\0186.png" alt="" width="200" height="200" draggable="false"
-                                 style="border-radius: 25px;">
-                            </span>
-                            <span>Blender </span>
-                        </div>
-                        <div class="back2" id="b-text">
-                            <p> 3D modeling and animation project of one of my favorite shows <a
-                                    href="https://youtu.be/ltRqzZAfVVQ?feature=shared" target="_blank"><i
-                                        class="fa-solid fa-arrow-up-right-from-square fa-xg" style="color: black;"></i>
-                                </a></p>
-
+                                <span style="color: white;">
+                                    <img src="photo\working2.webp" id="why" alt="" >
+                                </span>
+                                <span>
+                                    <p>Squad Pro</p>
+                                </span>
+                            </div>
+                            <div class="back2" id="b-text">
+                                <p> Game that I am currently working on, will put up an update before 31st july</p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
-            </div>
+
+                <!--project preview 4-->
 
 
-
-            <!--project preview 3-->
-
-
-            <div class="pro" id="pr2">
-                <div class="flip-container2">
-                    <div class="flipper2">
-                        <div class="front2">
-                            <img src="photo\come.webp" alt="" width="200" height="200" draggable="false"
-                             style="border-radius: 25px;">
-                            <span style="color: white;">
-                                <img src="photo\working2.webp" id="why" alt="" width="200" height="200">
-                            </span>
-                            <span>
-                                <p>Squad Pro</p>
-                            </span>
-                        </div>
-                        <div class="back2" id="b-text">
-                            <p> Game that I am currently working on, will put up an update before 31st july</p>
+                <div class="pro" id="pr2">
+                    <div class="flip-container2">
+                        <div class="flipper2">
+                            <div class="front2">
+                                <img src="photo\come.webp" alt="" width="200" height="200" draggable="false"
+                                    style="border-radius: 25px;">
+                                <span style="color: white;">
+                                    <img src="photo\working2.webp" id="why" alt="" >
+                                </span>
+                                <span>
+                                    <p>Under Working</p>
+                                </span>
+                            </div>
+                            <div class="back2" id="b-text">
+                                <p> Something related to andriod development.</p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
-            </div>
-
-
-            <!--project preview 4-->
-
-
-            <div class="pro" id="pr2">
-                <div class="flip-container2">
-                    <div class="flipper2">
-                        <div class="front2">
-                            <img src="photo\come.webp" alt="" width="200" height="200" draggable="false"
-                             style="border-radius: 25px;">
-                            <span style="color: white;">
-                                <img src="photo\working2.webp" id="why" alt="" width="200" height="200">
-                            </span>
-                            <span>
-                                <p>Under Working</p>
-                            </span>
-                        </div>
-                        <div class="back2" id="b-text">
-                            <p> Something related to andriod development.</p>
-                        </div>
-                    </div>
-                </div>
 
             </div>
-
 
         </div>
-
     </div>
 
     <!--joke or something-->
@@ -245,7 +263,7 @@
 
     <!--contact info-->
     <div class="contact-info">
-        <h2 style="color: black;"> you know you can find me here </h2>
+        <h2 style="color: black;">you know you can find me here </h2>
         <a class="links" href="https://github.com/Kittu616" target="_blank"> <i
                 class="fa-brands fa-github fa-2xl"></i></a>
         <a class="links" href="https://www.instagram.com/kitturphutane/" target="_blank"><i
@@ -257,8 +275,17 @@
         <a class="links" href="https://macrochosm.wordpress.com" target="_blank"><i id="wordpress"
                 class="fa-brands fa-wordpress-simple fa-2xl" style="color: white;"></i></a>
         <br>
-        <p style="color: black;"> © you know you can find me there </p>
+        <p style="color: black;"> you know you can find me there </p>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main_script.js" defer></script>
+    <script src="main_script_mob.js"></script>
 
 </body>
 

@@ -1,0 +1,161 @@
+.content:before {
+    font-size: 9rem;
+    content: '[';
+    animation: opacity 3.5s infinite;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.content:after {
+    font-size: 10rem;
+    content: ']';
+    animation: opacity 3.5s infinite;
+    position: absolute;
+    top: 35%;
+    left: 90%;
+}
+
+.content__container {
+    font-size: 7rem;
+    position: relative;
+    height: 26vh;
+    overflow: hidden;
+    margin-top: 18%;
+    margin-bottom: 17%;
+}
+
+#content_list_1 {
+    position: absolute;
+    list-style-type: none;
+    animation: trans 25s infinite;
+    margin-top: 0px;
+    margin-left: 7%;
+}
+
+#content_list_2 {
+    position: absolute;
+    list-style-type: none;
+    animation: trans 20s infinite;
+    margin-top: 0px;
+    margin-left: 50%;
+}
+
+
+@keyframes opacity {
+
+    50% {
+        opacity: 0;
+    }
+
+}
+
+@keyframes trans {
+
+    0%,
+    5% {
+        transform: translateY(-0%)
+    }
+
+    13.66%,
+    18.7% {
+        transform: translateY(-25%)
+    }
+
+    27.5%,
+    32% {
+        transform: translateY(-50%)
+    }
+
+    41.28%,
+    46.3% {
+        transform: translateY(-25%)
+    }
+
+    63.64%,
+    68% {
+        transform: translateY(-75%)
+    }
+
+    81.2%,
+    86% {
+        transform: translateY(-25%)
+    }
+
+    100% {
+        transform: translateY(-0%)
+    }
+}
+
+/*title card ends*/
+
+
+.show {
+    border-radius: 25px;
+    width: 85%;
+    height: 70vh;
+    padding: 5%;
+    margin: auto;
+    margin-top: 7%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#blq {
+    flex: 1 1 100%;
+}
+
+.card-text {
+    color: antiquewhite;
+    opacity: 1;
+    font-size: 200%;
+    transform: translateY(-8vh);
+    transition: all 3s ease-out;
+    transition-delay: 0s;
+    position: relative;
+}
+
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
+    padding-bottom: 0vh;
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100vh
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+}
+
+#bq-footer {
+    color: white;
+    font-size: larger;
+    text-align: right;
+    margin-right: -10vw;
+}
+
+.show-img {
+    padding: 0%;
+    flex: 1 1 100%;
+}
+
+.show-img2{
+    display: none;
+}
+
+.show-img img {
+    position: relative;
+    left: 35%;
+    width: 64%;
+}

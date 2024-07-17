@@ -1,0 +1,55 @@
+@media screen and (max-width:426px) {
+    .content:before {
+        font-size: 15rem;
+        top: 32%;
+        left: 0%;
+    }
+
+    .content:after {
+        font-size: 15rem;
+        top: 32%;
+        left: 165%;
+    }
+
+    .content__container {
+        font-size: 60px;
+        width: 200vw;
+        height: 12vh;
+        margin-top: 100%;
+        margin-bottom: 75%;
+    }
+
+
+    #content_list_1 {
+        margin: 0px 0px 0px 30px;
+    }
+
+    #content_list_2 {
+        margin: 0px 0px 0px 50%;
+    }
+
+    /*title card ends*/
+
+
+    .show {
+        width: 100vh;
+    }
+
+
+    /* Here are just some visual styles. 🖌 */
+
+
+    .show-img {
+        display: none;
+    }
+    .show-img2{
+        display: block;
+    }
+    .show-img2 img{
+        width: 250px;
+        margin-top: -60%;
+    }
+    #bq-footer{
+        font-size: 30px;
+    }
+}
